@@ -1,4 +1,4 @@
-package com.sebastian.inyecciondependencias.springbootapp.repositories;
+package com.sebastian.inyecciondependencias.springbootapp.repositories.vehicle;
 
 import java.util.Arrays;
 import java.util.List;
@@ -6,6 +6,7 @@ import java.util.List;
 import org.springframework.stereotype.Repository;
 
 import com.sebastian.inyecciondependencias.springbootapp.models.Vehicle;
+import com.sebastian.inyecciondependencias.springbootapp.repositories.IObjectRepository;
 
 
 @Repository

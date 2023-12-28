@@ -1,4 +1,4 @@
-package com.sebastian.inyecciondependencias.springbootapp.services;
+package com.sebastian.inyecciondependencias.springbootapp.services.product;
 
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import com.sebastian.inyecciondependencias.springbootapp.models.Product;
 import com.sebastian.inyecciondependencias.springbootapp.repositories.IObjectRepository;
+import com.sebastian.inyecciondependencias.springbootapp.services.IObjectService;
 
 /* Dentro de la carpeta "SERVICES" podemos crear clases que van a MANIPULAR u OBTENER la DATA de las clases que se encuentren
  * en la carpeta "RESPOSITORIES". Tambien puede tener mismos métodos, pero usando de por medio los de la clase repository.

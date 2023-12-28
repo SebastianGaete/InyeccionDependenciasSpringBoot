@@ -1,4 +1,4 @@
-package com.sebastian.inyecciondependencias.springbootapp.services;
+package com.sebastian.inyecciondependencias.springbootapp.services.vehicle;
 
 import java.util.List;
 
@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 
 import com.sebastian.inyecciondependencias.springbootapp.models.Vehicle;
 import com.sebastian.inyecciondependencias.springbootapp.repositories.IObjectRepository;
+import com.sebastian.inyecciondependencias.springbootapp.services.IObjectService;
 
 /* Utilizacion de la anotación @Quilifier
  * 

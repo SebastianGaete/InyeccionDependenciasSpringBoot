@@ -1,9 +1,10 @@
-package com.sebastian.inyecciondependencias.springbootapp.repositories;
+package com.sebastian.inyecciondependencias.springbootapp.repositories.product;
 
 import java.util.Arrays;
 import java.util.List;
 import org.springframework.stereotype.Repository;
 import com.sebastian.inyecciondependencias.springbootapp.models.Product;
+import com.sebastian.inyecciondependencias.springbootapp.repositories.IObjectRepository;
 
 /* La importancia de tener un package "repositories" es que en ella podemos crear clases que contengan DATA 
  * y como así tambien métodos para poder utilizarla.

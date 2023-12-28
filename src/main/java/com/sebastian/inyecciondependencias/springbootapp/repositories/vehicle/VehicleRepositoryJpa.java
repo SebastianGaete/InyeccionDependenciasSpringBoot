@@ -1,4 +1,4 @@
-package com.sebastian.inyecciondependencias.springbootapp.repositories;
+package com.sebastian.inyecciondependencias.springbootapp.repositories.vehicle;
 
 import java.util.Arrays;
 import java.util.List;
@@ -7,6 +7,7 @@ import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Repository;
 
 import com.sebastian.inyecciondependencias.springbootapp.models.Vehicle;
+import com.sebastian.inyecciondependencias.springbootapp.repositories.IObjectRepository;
 
 /* Utilización de anotación @Primary
 
@@ -23,7 +24,7 @@ import com.sebastian.inyecciondependencias.springbootapp.models.Vehicle;
 
 //@RequestScope
 //@SessionScope
-@Primary
+// @Primary
 @Repository
 public class VehicleRepositoryJpa implements IObjectRepository<Vehicle>{
 
