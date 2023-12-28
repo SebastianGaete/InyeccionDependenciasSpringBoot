@@ -2,6 +2,7 @@ package com.sebastian.inyecciondependencias.springbootapp.services;
 
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import com.sebastian.inyecciondependencias.springbootapp.models.Product;
 import com.sebastian.inyecciondependencias.springbootapp.repositories.IObjectRepository;
@@ -31,6 +32,9 @@ public class ProductServiceImpl implements IObjectService<Product> {
     @Autowired
     private IObjectRepository<Product> repository;
 
+    @Value("${config.impuesto}")
+    private Double impuesto;
+
 
     /* Como se mencionó anteriormente, podemos modificar a nuestro gusto como queremos devolver los datos que se encuentran
      * en el repository. en este caso modificamos el precio y el nombre con la función map() de Java 8. 
@@ -43,7 +47,7 @@ public class ProductServiceImpl implements IObjectService<Product> {
 
         return repository.findAll().stream()
         .map( p -> {
-            Double newPrice = p.getPrice() * 3.2d; // Suma de impuesto
+            Double newPrice = p.getPrice() * impuesto; // Suma de impuesto 30% traido del properties.
 
             // Product newProduct = new Product(p.getId(), p.getName(), p.getDescription(), newPrice.intValue());
 
