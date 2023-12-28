@@ -38,7 +38,7 @@ public class ProductRepositoryImpl implements IObjectRepository<Product>{
     }
 
     @Override
-    public Product finById(Integer id){
+    public Product findById(Integer id){
         Product product = findAll().stream()
         .filter(c-> c.getId().equals(id) )
         .findFirst()

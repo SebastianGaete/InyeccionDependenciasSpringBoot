@@ -4,5 +4,5 @@ import java.util.List;
 
 public interface IObjectRepository<T> {
     List<T> findAll();
-    T finById(Integer id);
+    T findById(Integer id);
 }

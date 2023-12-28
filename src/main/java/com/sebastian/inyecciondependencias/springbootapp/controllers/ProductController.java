@@ -9,24 +9,27 @@ import com.sebastian.inyecciondependencias.springbootapp.services.*;
 
 
 @RestController
-@RequestMapping("/api")
+@RequestMapping("/product")
 public class ProductController {
 
     /* Aquí tambien inyectamos la instancia de la clase genérica ProductServiceImpl (Component) por medio de su interfáz genérica, 
      * ahorrando colocar por nuestra cuenta el new() .
     */
     @Autowired
-    private IObjectService<Product> service;
-    
+    private IObjectService<Product> serviceProduct;
+
 
     @GetMapping("/findall")
     public List<Product> findAll(){
-        return service.findAll();
+        return serviceProduct.findAll();
     }
 
     @GetMapping("/findobject/{id}")
     public Product findById(@PathVariable Integer id){
-        return service.findById(id);
+        return serviceProduct.findById(id);
     }
+
+    
+
     
 }

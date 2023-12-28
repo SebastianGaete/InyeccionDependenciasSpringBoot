@@ -4,6 +4,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import com.sebastian.inyecciondependencias.springbootapp.models.Product;
+import com.sebastian.inyecciondependencias.springbootapp.repositories.IObjectRepository;
 
 /* Dentro de la carpeta "SERVICES" podemos crear clases que van a MANIPULAR u OBTENER la DATA de las clases que se encuentren
  * en la carpeta "RESPOSITORIES". Tambien puede tener mismos métodos, pero usando de por medio los de la clase repository.
@@ -28,7 +29,7 @@ public class ProductServiceImpl implements IObjectService<Product> {
      * Ahorrando el colocar por nuestra cuenta el new()
      */
     @Autowired
-    private IObjectService<Product> repository;
+    private IObjectRepository<Product> repository;
 
 
     /* Como se mencionó anteriormente, podemos modificar a nuestro gusto como queremos devolver los datos que se encuentran
