@@ -3,7 +3,7 @@ package com.sebastian.inyecciondependencias.springbootapp.repositories.vehicle;
 import java.util.Arrays;
 import java.util.List;
 
-import org.springframework.context.annotation.Primary;
+// import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Repository;
 
 import com.sebastian.inyecciondependencias.springbootapp.models.Vehicle;
